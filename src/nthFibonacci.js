@@ -2,7 +2,7 @@
 // subsequent number is the sum of the previous two.
 
 // For example, the first five Fibonacci numbers are:
-//   0 1 1 2 3
+//   0 1 1 2 3 5 8 13 21 34
 
 // If n were 4, your function should return 3; for 5, it should return 5.
 
@@ -17,6 +17,13 @@
 // etc...
 
 var nthFibonacci = function(n) {
-  // Your code here
+  if (n <= 2){
+    return 1;
+  }
+  else if (n === 0) {
+    return 0;
+  }
+  else{
+    return nthFibonacci(n-2) + nthFibonacci(n-1);
+  }
 };
-
