@@ -15,7 +15,6 @@
 // sumArray([2, 4, 6, 8]) => 20
 // sumArray([1, 2, 3, 4, 5]) => 15
 
-
 var sumArray = function(arr) {
-  // Your code here
+  return (arr.length === 0 ? 0 : arr[0] + sumArray(arr.slice(1)))
 };
